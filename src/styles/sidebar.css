@@ -1,0 +1,187 @@
+.sidebar {
+    width: 250px;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed; */
+    height: 100vh;
+    @media screen and (max-width: 393px) {
+      /* background-color: green; */
+      background-color: var(--background-color);
+      display: none;
+      position: fixed;
+    }
+  }
+  .navigation-bar {
+    width: 202px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: red; */
+    height: 100%;
+    > div {
+      width: 100%;
+    }
+  }
+  .navigation-menu-wrapper {
+    margin-top: 25px;
+  }
+  .navbar-logo {
+    margin-top: 15px;
+    width: 100%;
+    height: 64px;
+    gap: 10px;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    > img {
+      margin-left: 10px;
+    }
+  }
+  .navigation-menu {
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0px;
+    > button {
+      height: 40px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      width: 100%;
+      text-decoration: none;
+      column-gap: 15px;
+      padding-left: 15px;
+      background-color: transparent;
+      border: none;
+      > img {
+        width: 16px;
+        height: 16px;
+        filter: invert(0);
+      }
+      > h1 {
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--text-gray-color);
+      }
+    }
+    > .active {
+      background-color: var(--background-color-light-green);
+      > h1 {
+        color: var(--text-active-color);
+      }
+    }
+  }
+  .today-events {
+    margin-top: 30px;
+  }
+  .todays-event-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > h1 {
+      width: 170px;
+      /* background-color: yellow; */
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-gray-color);
+    }
+  }
+  .today-events-profile {
+    list-style-type: none;
+    padding: 0;
+    margin: 0px;
+    margin-top: 10px;
+    > button {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      padding-left: 15px;
+      column-gap: 20px;
+      height: 64px;
+      background-color: transparent;
+      border: none;
+      > img {
+        width: 40px;
+        height: 40px;
+      }
+      > .profile-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        row-gap: 5px;
+        > label {
+          font-size: 12px;
+          font-weight: 500;
+          color: var(--text-gray-color);
+          padding: 0px;
+          margin: 0px;
+        }
+        > h1 {
+          font-size: 14px;
+          font-weight: 500;
+          color: var(--text-black-color);
+          padding: 0px;
+          margin: 0px;
+        }
+      }
+    }
+  }
+  .sidebar-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .light-mode {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    column-gap: 10px;
+    background-color: var(--background-color-light-gray);
+    > label {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-gray-color);
+    }
+  }
+  .dark-mode {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    column-gap: 10px;
+    background-color: var(--background-color-light-gray);
+    > label {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-gray-color);
+    }
+  }
+  .terms-policy {
+    margin-top: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 10px;
+    > a {
+      text-align: left;
+      width: 100%;
+      color: #317a3a;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  }
+  .mode-switcher{
+    background-color: yellow;
+  }
