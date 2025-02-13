@@ -442,7 +442,7 @@ const EventForm = () => {
           <label htmlFor="description">Description</label>
           <textarea
             id="description"
-            placeholder="Add event description..."
+            placeholder="Add description..."
             value={description}
             onChange={handleDescriptionChange}
             className={formError.description && "event-error"}
@@ -483,8 +483,7 @@ const EventForm = () => {
               >
                 Click to upload
               </a>
-              or drag and drop SVG, PNG, JPG or GIF (recommended size
-              1024x1024px)
+              or drag and drop
             </p>
             <input
               id="fileInput"
